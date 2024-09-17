@@ -5,10 +5,10 @@
     "ng": "ng",
     "deploy": "ng deploy --repo=git@github.com-personal:vukonam/angular-todo-basics",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production --base-href=/angular-todo-basics/ && gh-pages -d dist/angular-todo/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:todo-angular": "node dist/todo-angular/server/server.mjs"
+    "serve:ssr:todo-angular": "node dist/angular-todo/server/server.mjs"
   },
   "private": true,
   "dependencies": {
