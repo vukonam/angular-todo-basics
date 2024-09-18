@@ -1,10 +1,9 @@
 {
   "name": "todo-angular",
   "version": "0.0.0",
-  "homepage": "https://vukonam.github.io/angular-todo-basics/",
   "scripts": {
     "ng": "ng",
-    "deploy": "ng deploy --repo=git@github.com-personal:vukonam/angular-todo-basics",
+    "deploy": "ng deploy --repo=git@github.com-personal:vukonam/angular-todo-basics --dir=dist/browser",
     "start": "ng serve",
     "build": "ng build --configuration production --base-href=/angular-todo-basics/",
     "watch": "ng build --watch --configuration development",
@@ -23,9 +22,7 @@
     "@angular/platform-server": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@angular/ssr": "^18.0.3",
-    "angular-cli-ghpages": "^2.0.1",
     "express": "^4.18.2",
-    "gh-pages": "^6.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
